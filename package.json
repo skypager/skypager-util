@@ -1,0 +1,56 @@
+{
+  "name": "skypager-util",
+  "version": "4.0.0",
+  "private": "true",
+  "description": "a collection of utils shared across the skypager modules",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:skypager/skypager-util"
+  },
+  "engines": {
+    "npm": ">=3"
+  },
+  "scripts": {
+    "test": "make test",
+    "lint": "make lint",
+    "build": "make",
+    "preversion": "make"
+  },
+  "skypager": {
+    "helpersRoot": "src/helpers"
+  },
+  "author": "Jon Soeder <jon@chicago.com>",
+  "license": "UNLICENSED",
+  "babel": {
+    "presets": [
+      "skypager"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "skypager"
+    ],
+    "env": {
+      "browser": true,
+      "node": true,
+      "mocha": true
+    }
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.7",
+    "babel-eslint": "^6.0.4",
+    "babel-preset-skypager": "^2.58.0",
+    "babel-register": "^6.7.0",
+    "chai": "^3.5.0",
+    "eslint": "^2.10.1",
+    "eslint-config-skypager": "^2.59.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "find-node-modules": "^1.0.3",
+    "findup-sync": "^0.4.2",
+    "lodash": "^4.13.0"
+  }
+}
