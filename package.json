@@ -1,6 +1,6 @@
 {
   "name": "skypager-util",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "private": "true",
   "description": "a collection of utils shared across the skypager modules",
   "main": "index.js",
